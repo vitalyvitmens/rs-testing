@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Form from './Form'
 
 const DEFAULT_HEADER = 'Grettings'
 
@@ -25,25 +26,28 @@ export const App = () => {
 		<header>
 			<div className="App">
 				<h1 data-testid="header-id">{headerValue}</h1>
-				<input 
-				  type="text" 
+				<input
+					type="text"
 					id="user-input"
-					value={inputValue} 
-					onChange={handleIntutChange} 
+					value={inputValue}
+					onChange={handleIntutChange}
 					data-testid="user-input"
 				/>
 				<button 
-				  onClick={handleSubmit}
+				  onClick={handleSubmit} 
 					data-testid="submit-button"
-					>
-						Отправить
-					</button>
+				>
+					Отправить
+				</button>
 				<button 
-				  onClick={handleReset}
+				  onClick={handleReset} 
 					data-testid="reset-button"
-					>
-						Сбросить
-					</button>
+				>
+					Сбросить
+				</button>
+			</div>
+			<div className="App">
+				<Form />
 			</div>
 		</header>
 	)

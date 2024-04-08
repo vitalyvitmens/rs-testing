@@ -1,5 +1,5 @@
 import { fireEvent, render } from '@testing-library/react'
-import Form from './Form'
+import Form from '../Form'
 
 describe('Form', () => {
 	it('отправляет данные, когда форма заполнена и отправлена', () => {

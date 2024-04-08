@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Button from './Button'
 
 const Form = ({ onSubmit }) => {
 	const [formData, setFormData] = useState({
@@ -51,9 +52,9 @@ const Form = ({ onSubmit }) => {
 				data-testid="message-input"
 			/>
 
-			<button type="submit" data-testid="submit-button">
+			<Button type="submit" data-testid="submit-button">
 				Отправить
-			</button>
+			</Button>
 		</form>
 	)
 }
