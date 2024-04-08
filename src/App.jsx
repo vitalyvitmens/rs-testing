@@ -27,6 +27,7 @@ export const App = () => {
 				<h1 data-testid="header-id">{headerValue}</h1>
 				<input 
 				  type="text" 
+					id="user-input"
 					value={inputValue} 
 					onChange={handleIntutChange} 
 					data-testid="user-input"
